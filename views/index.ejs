@@ -59,12 +59,12 @@
           <h1 class="ps-center">Nuentro Menu</h1>
           <br />
 
-          <% menu.forEach(item=> { %>
-           <h4><%=  item.name %> </h4>
+          <% menu.forEach( plato=> { %>
+           <h4><%= plato.name %> </h4>
           <p class="ps-text-grey">
-            <%=  item.description %> U$S<%=  item.price %> 
+            <%= plato.description %> U$S<%= plato.price %> 
           </p>
-          <a href="/detalle/<%= item.id %> ">ver más</a>
+          <a href="/menu/detail/<%=  plato.id %> ">ver más</a>
          <br>
           <% }) %>
         </div>

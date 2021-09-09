@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
-const { detail }= require('../controllers/menuController')
+const {detail}= require ('../controllers/menuController');
 
-/* GET users listing. */
-router.get('/:id', detail);
 
-module.exports = router;
+/* /menu */
+router.get('/detail/:id', detail)
